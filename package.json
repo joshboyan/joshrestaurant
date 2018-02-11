@@ -1,0 +1,27 @@
+{
+  "name": "joshrestaurant",
+  "version": "1.0.0",
+  "description": "Mobile-first responsive website for a local Mexican restaurant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshboyan/joshrestaurant.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshboyan/joshrestaurant/issues"
+  },
+  "homepage": "https://github.com/joshboyan/joshrestaurant#readme",
+  
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-less": "^3.4.0"
+  }
+}

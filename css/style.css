@@ -1,47 +1,29 @@
-/*
-primary: #ff4081;
-p-light: #ff79b0;
-p-dark: ##c60055;
-secondary: #e676e6;
-s-light: #66ffa6;
-s-dark:#00b248;
-*/
-
 /* global styles */
 body {
- background-color: #ff4081;
+  background-color: #e676e6;
 }
-
 h1,
 h2 {
-    text-align: center;
-    font-family: 'Rammetto One', cursive;
+  text-align: center;
+  font-family: 'Rammetto One', cursive;
 }
-
 h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
-
 li {
-    display: inline-block;
-    
+  display: inline-block;
 }
-
 a {
-    font-size: 36px;
+  font-size: 36px;
 }
-
 /* header */
 header li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
-
 header li:first-of-type {
- margin-left: 0;
+  margin-left: 0;
 }
-
 /* footer styles */
 footer a {
-    font-size: 64px;
+  font-size: 64px;
 }
-
