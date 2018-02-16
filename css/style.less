@@ -5,17 +5,25 @@
 @secondary: #FFFFFF;
 @s-light: #66ffa6;
 @s-dark:#00b248;
+@white-base: #FFFFFF;
+@text-color: #010101;
 @orimary-font: 'Rammetto One', cursive;
+@secondary-font: 'Open Sans', sans-serif;
 
 /* global styles */
+html {
+    font-size: 16px;
+}
 body {
- background-color: @s-light;
+ background-color: @white-base;
+ font-family: @secondary-font;
 }
 
 h1,
 h2 {
     text-align: center;
     font-family: @orimary-font;
+    color: @primary;
 }
 
 h1 {
@@ -29,7 +37,12 @@ li {
 
 a {
     font-size: 36px;
-    color: @secondary;
+    color:@s-dark;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 label {
@@ -37,16 +50,114 @@ label {
 }
 
 /* header */
+header {
+    background-image: url('../images/header-photo.jpeg');
+    height: 300px;
+    background-size: cover;
+    margin-top: -50px;
+}
+
 header li {
-    margin: 0 10px;
+    margin: 0 5px;
+    font-size: 1.44em;
 }
 
 header li:first-of-type {
  margin-left: 0;
 }
 
+.transparency {
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: 50px auto;
+    background-color: black;
+    opacity: .6;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-stuff {
+    position: relative;
+    margin-top: -240px;
+}
+
+/* main*/
+figure {
+    margin: auto;
+}
+
+figure img {
+    margin: 7px;
+}
+
+figcaption {
+    position: relative;
+    margin-top: -70px;
+    color: @s-dark;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+p:last-of-type {
+    color: @text-color;
+}
+
 /* footer styles */
+footer {
+    background: @text-color;
+}
+
 footer a {
     font-size: 64px;
 }
 
+footer li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+iframe {
+    width: 90%;
+    margin: 10px 5%;
+    height: 300px;
+}
+
+/* tablet styles*/
+@media screen and (min-width: 400px) {
+    nav ul {
+        margin-left: 22.5%;
+    }
+
+    .halfer {
+        float: left;
+        width: 50%;
+    }
+    figure img {
+        padding: 5px;
+    }
+
+    p:first-of-type {
+       padding-top: 55px;
+    }
+    
+    .copy {
+        width: 100%;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}

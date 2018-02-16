@@ -15,40 +15,59 @@
     <!--styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Josh's Restaurant</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="transparency"></div>
+        <div class="header-stuff">
+            <h1>Josh's Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section aria-labelledby="pictures of food">
-            <h2 id="pictures of food"></h2>
-            <div><img src="http://www.placepuppy.net/400/250" alt="Tacos"></div>
-            <div><img src="http://www.placepuppy.net/400/250" alt="Burritos"></div>
-            <div><img src="http://www.placepuppy.net/400/250" alt="Quesadillas"></div>
-            <div><img src="http://www.placepuppy.net/400/250" alt="Nachos"></div>
+            <h2 id="pictures of food">Our Food</h2>
+            <figure class="halfer">
+                <img src="http://www.placepuppy.net/400/250" alt="Tacos">
+                <figcaption>Tacos</figcaption>
+            </figure>
+            <figure class="halfer">
+                <img src="http://www.placepuppy.net/400/250" alt="Burritos">
+                <figcaption>Burritos</figcaption>
+            </figure>
+            <figure class="halfer">
+                <img src="http://www.placepuppy.net/400/250" alt="Quesadillas">
+                <figcaption>Quesadillas</figcaption>
+            </figure>
+            <figure class="halfer">
+                <img src="http://www.placepuppy.net/400/250" alt="Tacos">
+                <figcaption>Nachos</figcaption>
+            </figure>
         </section>
         <section aria-labelledby="about us">
-            <h2 id="about us"></h2>
+            <h2 id="about us">About Us</h2>
             <p>Anim laboris quis dolor dolore aliquip aliqua cillum consectetur labore cupidatat proident nostrud ad occaecat. Amet nostrud tempor ea est commodo sunt anim occaecat exercitation excepteur occaecat excepteur voluptate eiusmod. Voluptate minim
                 deserunt proident ex laborum reprehenderit amet aute officia. Aliquip ut ipsum minim qui culpa. Labore enim magna aute cillum laboris. Commodo mollit fugiat laboris fugiat eiusmod exercitation adipisicing. Ea aliqua qui excepteur mollit
                 officia cillum ipsum ut non in nulla enim.</p>
-            <p>Esse ullamco qui tempor ad. Voluptate enim do in aliqua amet commodo minim minim adipisicing anim occaecat dolore. Consequat cupidatat laborum do voluptate quis.</p>
+            <p>Anim laboris quis dolor dolore aliquip aliqua cillum consectetur labore cupidatat proident nostrud ad occaecat. Amet nostrud tempor ea est commodo sunt anim occaecat exercitation excepteur occaecat excepteur voluptate eiusmod. Voluptate minim
+                deserunt proident ex laborum reprehenderit amet aute officia. Aliquip ut ipsum minim qui culpa. Labore enim magna aute cillum laboris. Commodo mollit fugiat laboris fugiat eiusmod exercitation adipisicing. Ea aliqua qui excepteur mollit
+                officia cillum ipsum ut non in nulla enim.</p>
         </section>
     </main>
     <footer>
-        <div class="halfer"></div>
-        <div class="halfer"></div>
-        <div>
+        <div class="halfer clearfix">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.030591458488!2d-93.18262334860518!3d44.98368967329439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32c84be5000bd%3A0x6f84c8dbfb9ba8b8!2s1890+Buford+Ave%2C+St+Paul%2C+MN+55108!5e0!3m2!1sen!2sus!4v1518750040944"
+                allowfullscreen></iframe></div>
+        <div class="halfer clearfix">
             <ul>
                 <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
@@ -56,6 +75,9 @@
             </ul>
         </div>
     </footer>
+    <div class="copy clearfix">
+        &copy; Josh Restaurant 2018
+    </div>
 </body>
 
 </html>
